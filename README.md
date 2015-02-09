@@ -4,6 +4,7 @@ Steps to complete project:
 	1. Got index.html a score higher the 90 by following the steps in PageSpeed insights. 
 	2. Got the pizzas to render around 60fps. The way I calulated that is through the console output which tells me, "Average time to generate last 10 frames:". 
 		Of which is on average below 16ms per 10 frames which is required for 60fps.
+		All i need to do was simply reduce the number of pizza generated. It seems reducing from 200 to 30 had no impact how the site actually looked. 
 	3. Got pizza slider down below 5ms to resize pizzas. This was done by pull out all the unnecessary thing out of the for loop that cycles through all 100 pizza items.
 		Also needed to call document.querySelectorAll(".randomPizzaContainer") only once outside of the loop and assign it to variable.
 		This also helped get below the 5ms mark.
